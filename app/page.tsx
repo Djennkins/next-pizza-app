@@ -1,10 +1,12 @@
-import { Button } from '@/components/ui/button';
+import { Container } from '@/components/shared';
+import { Title } from '@/components/shared/title';
 
 export default function Home() {
     return (
-        <div>
-            <h1>Home</h1>
-            <Button variant="outline">Корзина</Button>
-        </div>
+        <>
+            <Container className="mt-10">
+                <Title text="Все пиццы" size="lg" className="font-extrabold"></Title>
+            </Container>
+        </>
     );
 }
